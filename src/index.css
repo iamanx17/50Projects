@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --split-left-bg: rgba(87, 84, 236, 0.7);
+  --split-left-btn-bg: rgba(87, 84, 236, 1);
+  --split-right-bg: rgba(43, 43, 43, 0.8);
+  --split-right-btn-bg: rgba(28, 122, 28, 1);
+}

@@ -1,0 +1,12 @@
+.box{
+    transform: translateX(-300%);
+}
+
+.box:nth-child(even){
+    transform: translateX(500%);
+}
+
+.box.show{
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}

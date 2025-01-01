@@ -1,0 +1,86 @@
+.split {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.8s ease;
+}
+
+.right {
+  right: 0;
+}
+
+.left::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  background-color: var(--split-left-bg);
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+}
+
+.right::before {
+  content: "";
+  position: absolute;
+  background-color: var(--split-right-bg);
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s ease;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  color: #fff;
+  font-size: 65px;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+.btn {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  padding: 20px 60px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.left .btn:hover {
+  background-color: var(--split-left-btn-bg);
+  border-color: var(--split-left-btn-bg);
+}
+
+.right .btn:hover {
+  background-color: var(--split-right-btn-bg);
+  border-color: var(--split-right-btn-bg);
+}
+
+.split img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hover-left .left {
+  width: 60%;
+}
+
+.hover-left .right {
+  width: 40%;
+}
+
+.hover-right .left {
+  width: 40%;
+}
+
+.hover-right .right {
+  width: 60%;
+}
